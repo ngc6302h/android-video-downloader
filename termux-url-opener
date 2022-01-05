@@ -1,2 +1,7 @@
 #!/bin/bash
-yt-dlp -o "~/storage/downloads/%(title)s.%(ext)s" $1 &
+if termux-dialog confirm -t "Convert to mp3?" | grep -q "yes";
+then
+    extra_options="-x --audio-format mp3"
+fi
+echo $extra_options
+yt-dlp $extra_options -o "~/storage/downloads/%(title)s.%(ext)s" $1 &
