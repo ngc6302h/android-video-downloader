@@ -14,7 +14,8 @@ In **termux** run:
 ```
 pkg install python3 ffmpeg &&
 python3 -m pip install -U yt-dlp &&
-curl -L -o ~/bin/termux-url-opener https://github.com/ngc6302h/android-video-downloader/raw/master/termux-url-opener
+curl -L -o ~/bin/termux-url-opener https://github.com/ngc6302h/android-video-downloader/raw/master/termux-url-opener &&
+termux-setup-storage
 ```
 (You can copy this block into the termux console and run it)
 
