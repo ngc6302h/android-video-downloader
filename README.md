@@ -2,9 +2,11 @@
 One-click solution to download videos to your phone
 
 ## Prerequisites 
-**termux**
+**termux** => https://f-droid.org/en/packages/com.termux/
 
-Get it at https://f-droid.org/repository/browse/?fdid=com.termux
+**termux:API** => https://f-droid.org/en/packages/com.termux.api/
+
+
 
 ## Requisites
 In **termux** run:
