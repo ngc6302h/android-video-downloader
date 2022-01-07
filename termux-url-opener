@@ -5,4 +5,4 @@ then
 else
     extra_options="--recode-video mp4"
 fi
-yt-dlp $extra_options --exec "termux-media-scan {}; termux-toast 'Finished download'" -o "~/storage/downloads/%(title)s.%(ext)s" $1
+yt-dlp $extra_options --exec "touch {}; termux-media-scan {}; termux-toast 'Finished download'" -o "~/storage/downloads/%(title)s.%(ext)s" $1
